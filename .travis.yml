@@ -4,6 +4,9 @@ node_js:
 before_install:
   - npm install -g yarn@1.19.0
 
+cache:
+  yarn: true
+
 install:
   - yarn
 
@@ -11,6 +14,7 @@ matrix:
   include:
     - name: build
       script:
+        - yarn --version
         - yarn build
 
     - name: build_core
