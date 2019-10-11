@@ -3,7 +3,8 @@ node_js:
   - "12"
 before_install:
   - yarn upgrade ---latest
-  - npm install lerna
+  - npm install
+  - yarn install
 
 cache:
   yarn: true
