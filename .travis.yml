@@ -16,7 +16,7 @@ matrix:
   include:
     - name: build
       script:
-        - yarn build
+        - CI=false yarn build
 
     - name: build_core
       script:
